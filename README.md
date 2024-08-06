@@ -1,6 +1,6 @@
 # FLIP 'N MATCH
 > [!NOTE]
-> Last Updated August 05, 2024.
+> Last Updated August 06, 2024.
 
 ## Technologies
 - HTML

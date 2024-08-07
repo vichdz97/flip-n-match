@@ -2,6 +2,9 @@
 > [!NOTE]
 > Last Updated August 06, 2024.
 
+## Live Demo
+Try and beat the clock in [this](https://flip-n-match.victor-jr.com) interactive card matching game!
+
 ## Technologies
 - HTML
 - CSS

@@ -6,8 +6,8 @@ const errorSfx = new Audio("sounds/error.mp3");
 
 // LOAD BG MUSIC
 const music = new Audio("sounds/To the Gateway - Super Mario Galaxy.mp3");
-const PLAY = 0.5;
-const MUTE = 0;
+music.volume = 0.5;
+var firstPlay = true;
 
 // FADE OUT FX
 function fadeOut(audio) {
@@ -28,11 +28,16 @@ volumeIcon.addEventListener('click', (e) => {
     let oldFileName = splitFile[splitFile.length - 1];
     let newFileName = oldFileName === "volume.svg" ? "mute.svg" : "volume.svg";
     if (newFileName === "volume.svg") {
-        music.volume = PLAY;
-        music.play();
+        if (firstPlay) {
+            music.play();
+            firstPlay = false;
+        }
+        else {
+            music.muted = false;
+        }
     }
     else {
-        music.volume = MUTE;
+        music.muted = true;
     }
     e.target.src = e.target.src.replace(oldFileName, newFileName);
 });

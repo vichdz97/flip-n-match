@@ -12,7 +12,7 @@ Try and beat the clock in [this](https://flip-n-match.victor-jr.com) interactive
 
 ## Screenshots
 > Desktop View
-<img width="300" alt="Flip 'N Match Screenshot (Desktop View)" src="https://github.com/user-attachments/assets/e4bc0a41-2ef4-4fd2-96ff-0f3f1f964dd0">
+<img width="300" alt="Flip 'N Match Screenshot (Desktop View)" src="https://github.com/user-attachments/assets/653e7f98-a0f2-4051-b7bf-8bfe2e020e10">
 
 > Mobile View
-<img width="150" alt="Flip 'N Match Screenshot (Mobile View)" src="https://github.com/user-attachments/assets/bae47233-174e-4a64-a034-f5f5b0dc5372">
+<img width="150" alt="Flip 'N Match Screenshot (Mobile View)" src="https://github.com/user-attachments/assets/a3ed7b73-3a70-4385-8007-4fff8495ac18">

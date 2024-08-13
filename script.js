@@ -1,4 +1,6 @@
 // LOAD SOUND FX
+const firstFlipSfx = new Audio("sounds/flip.mp3");
+const secondFlipSfx = new Audio("sounds/flip.mp3");
 const matchSfx = new Audio("sounds/correct.mp3");
 const errorSfx = new Audio("sounds/error.mp3");
 
@@ -113,9 +115,11 @@ function flipCard() {
         this.classList.add('flipped');
 
         if (!flippedCard) { // first card flip
+            firstFlipSfx.play();
             flippedCard = this;
         } 
         else { // second card flip
+            secondFlipSfx.play();
             bothCardsAreFlipped = true;
             setTimeout(() => {
                 checkForMatch(this);

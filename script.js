@@ -1,9 +1,11 @@
-// LOAD AUDIO
-const music = new Audio("sounds/To the Gateway - Super Mario Galaxy.mp3");
-music.volume = 0.5;
-music.play();
+// LOAD SOUND FX
 const matchSfx = new Audio("sounds/correct.mp3");
 const errorSfx = new Audio("sounds/error.mp3");
+
+// LOAD BG MUSIC
+const music = new Audio("sounds/To the Gateway - Super Mario Galaxy.mp3");
+const PLAY = 0.5;
+const MUTE = 0;
 
 // FADE OUT FX
 function fadeOut(audio) {
@@ -16,6 +18,22 @@ function fadeOut(audio) {
         }
     }, 50);
 }
+
+// MUTE/PLAY BG MUSIC
+const volumeIcon = document.getElementById('volume');
+volumeIcon.addEventListener('click', (e) => {
+    const splitFile = e.target.src.split("/");
+    let oldFileName = splitFile[splitFile.length - 1];
+    let newFileName = oldFileName === "volume.svg" ? "mute.svg" : "volume.svg";
+    if (newFileName === "volume.svg") {
+        music.volume = PLAY;
+        music.play();
+    }
+    else {
+        music.volume = MUTE;
+    }
+    e.target.src = e.target.src.replace(oldFileName, newFileName);
+});
 
 // RESET BUTTON
 const reset = document.getElementById('resetBtn');
